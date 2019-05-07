@@ -14,7 +14,7 @@ spark.conf.set("fs.azure.createRemoteFileSystemDuringInitialization", "true")
 
 df = spark.read.format('com.databricks.spark.csv').options(header='true', inferschema='true').load(higgsBosonInpath)
 
-print("Total events: ", df.count())
+print("Total events2: ", df.count())
 
 df.show()
 
